@@ -35,7 +35,7 @@ Feature: Spring Backlog
     When I set the story point spend
     Then the remaning story point is reduce of the story point set
 
-  @RAP-3 @OPEN
+  @RAP-3 @WIP
   Scenario: Update a story point spend
     Given the sprint is started
     When I update the spend story point
