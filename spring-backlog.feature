@@ -27,8 +27,14 @@ Feature: Spring Backlog
     Then the item is added to the sprint backlog
     And the item is under the unplan item
 
-  @ORPHAN
   Scenario: Update the daily
     Given the sprint is started
-        When I set the story point spend
-        Then the remaning story point is reduce of the story point set
+    When I set the story point spend
+    Then the remaning story point is reduce of the story point set
+
+  @ORPHAN
+  Scenario: Update a story point spend
+    Given the sprint is started
+        When I update the spend story point
+        Then the remaning story point is updated of the story point set
+    
