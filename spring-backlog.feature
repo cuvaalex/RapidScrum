@@ -18,6 +18,7 @@ Feature: Spring Backlog
     Then the item is added to the sprint backlog
     And the item is under the plan item
 
+  @RAP-3 @OPEN
   Scenario: Add a unplan item
     Given the sprint is started
     When I create a new item
