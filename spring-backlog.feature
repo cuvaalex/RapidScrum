@@ -17,13 +17,18 @@ Feature: Spring Backlog
     Then the item is added to the sprint backlog
     And the item is under the plan item
 
-  @ORPHAN
   Scenario: Add a unplan item
     Given the sprint is started
-        When I create a new item
-        And I set a name
-        And I set an id
-        And I set an issue type
-        And I set the original size
-        Then the item is added to the sprint backlog
-        And the item is under the unplan item
+    When I create a new item
+    And I set a name
+    And I set an id
+    And I set an issue type
+    And I set the original size
+    Then the item is added to the sprint backlog
+    And the item is under the unplan item
+
+  @ORPHAN
+  Scenario: Update the daily
+    Given the sprint is started
+        When I set the story point spend
+        Then the remaning story point is reduce of the story point set
