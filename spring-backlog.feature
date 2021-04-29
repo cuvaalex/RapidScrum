@@ -7,7 +7,7 @@ Feature: Spring Backlog
   Background:
     Given I open the sprint backlog
 
-  @RAP-3 @OPEN
+  @RAP-3 @WIP
   Scenario: Add a plan item
     Given the sprint is not started
     When I create a new item
