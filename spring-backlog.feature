@@ -29,7 +29,7 @@ Feature: Spring Backlog
     Then the item is added to the sprint backlog
     And the item is under the unplan item
 
-  @RAP-3 @OPEN
+  @RAP-3 @WIP
   Scenario: Update the daily
     Given the sprint is started
     When I set the story point spend
