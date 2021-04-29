@@ -7,6 +7,7 @@ Feature: Spring Backlog
   Background:
     Given I open the sprint backlog
 
+  @RAP-3 @OPEN
   Scenario: Add a plan item
     Given the sprint is not started
     When I create a new item
@@ -32,9 +33,7 @@ Feature: Spring Backlog
     When I set the story point spend
     Then the remaning story point is reduce of the story point set
 
-  @ORPHAN
   Scenario: Update a story point spend
     Given the sprint is started
-        When I update the spend story point
-        Then the remaning story point is updated of the story point set
-    
+    When I update the spend story point
+    Then the remaning story point is updated of the story point set
