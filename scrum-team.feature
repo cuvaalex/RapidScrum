@@ -1,6 +1,6 @@
 Feature: Scrum Team
 
-  @RAP-1 @OPEN
+  @RAP-1 @MANUAL @OPEN
   Scenario: Add team member
     Given I have to add a team member
     When I set an id
